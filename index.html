@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Polos Hermanous</title>
+    
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="imgs/favicon-32x32.webp" />
+
+ 
+
+  <body>
+
+    <style>
+      #loader {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        overflow: visible;
+        background: #fff url(./imgs/ChefLoading.gif) no-repeat center center;
+      }
+      </style>
+      
+      <script>
+      var myVar;
+      
+      function myFunction() {
+        myVar = setTimeout(showPage, 1750);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.visibility = "hidden";
+      }
+      </script>
+      
+      <body onload="myFunction()" style=>
+        <div id="loader"></div>
+      </body>
+
+      
+
+
+
+
+
+    <!-- Start Header -->
+    <div class="header" id="header">
+      <div class="container">
+        <a href="#" class="logo">Los Polos Hermanous</a>
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="Booking.html">Booking</a></li>
+         
+        </ul>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start Landing -->
+    <div class="landing">
+      <div class="container">
+        <div class="text">
+          <h1>Home</h1>
+          <p>Welcome to our food website, where we bring the joy of cooking into your own home</p>
+        </div>
+        <div class="image">
+          <img decoding="async" src="./imgs/landing5.jpg" alt="" />
+        </div>
+      </div>
+      <a href="#index" class="go-down">
+        <i class="fas fa-angle-double-down fa-2x"></i>
+      </a>
+    </div>
+
+
+    <div class="gallery" id="gallery">
+      <h2 class="main-title">ِMost Orderd</h2>
+      <div class="container">
+        <div class="box">
+          <div class="image">
+            <img decoding="async" src="imgs/sallat.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img decoding="async" src="imgs/pexels-iina-luoto-8888888888881211887.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img decoding="async" src="imgs/fooddish2.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img decoding="async" src="imgs/fooddish3.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img decoding="async" src="imgs/spaghetti.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img decoding="async" src="imgs/steak.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    
+    <br>
+    <br>
+    
+<!-- زر Order Now -->
+<button class="order-button">
+  <a href="menu.html" alt="Order Now">Order Now</a>
+</button>
+
+
+<!-- بقية محتوى صفحتك -->
+
+
+
+    <!-- End Landing -->
+
+ 
+    
+    <p id="current-time"></p>
+    <style>
+      #current-time {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+    </style>
+    <script>
+        function displayTime() {
+            var now = new Date();
+            var timeString = now.toLocaleTimeString('en-US'); 
+            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+            var dateString = now.toLocaleDateString('en-US', options);
+            document.getElementById("current-time").innerHTML = "Current Time: " + timeString + "<br>Date: " + dateString;
+        }
+  
+        setInterval(displayTime, 1000);
+        displayTime(); 
+    </script>
+   
